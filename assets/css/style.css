@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Raleway', sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #8b8b8b;
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* ==========HEADER TOP AREA========= */
+.nav-brand.text-uppercase {
+    letter-spacing: 5px;
+    text-decoration: none;
+    font-size: 32px;
+    color: #333333;
+    text-shadow: 1px 0px 4px #00000066;
+}
+.header-top {
+    padding: 30px 0;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+}
+.header-top .navbar .nav-item a, .header-top button.btn {color: #333333;font-size: 20px;font-weight: 400;}
+
+.header-top button.btn {
+    font-size: 20px;
+}
+.header-top button.btn, .banner-btn {
+    color: #1769ff;
+    border-radius: 50px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+.header-top button.btn:hover {
+    color: #fff;
+}
+nav.navbar {
+    padding: 0;
+}
+li.nav-item {
+    padding: 0 30px;
+}
+
+
+/* ==========HEADER TOP AREA========= */
+/* ==========Hero AREA========= */
+
+
+.hero-section {
+    background: url(../img/Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.banner-content {
+    padding: 200px 0;
+    margin-left: 100px;
+}
+.banner-content h2, .banner-content h1, .banner-content p {
+    margin-bottom: 26px;
+}
+.banner-content h2 {
+    font-size: 38px;
+    font-weight: 200;
+}
+.banner-content h1 {
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.banner-content h2, .banner-content h1, .banner-content p {
+    margin-bottom: 26px;
+}
+
+.banner-content p {
+    font-weight: 400;
+}
+button.btn.banner-btn.btn-outline-primary.my-2.my-sm-0 {
+    margin: 0;
+}
+/* ==========Service AREA========= */
+.service-section {
+    padding: 80px 0;
+}
+
+.service-title h1 {
+    font-size: 32px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.service-title {margin-bottom: 60px;}
+
+.service-icon-table span {
+    display: block;
+    font-size: 55px;
+    color: #1769ff;
+    margin-bottom: 35px;
+    transition: 0.4s;
+}
+
+.single-service-box h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 20px;
+    transition: 0.4s;
+}
+
+.single-service-box h3:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 50px;
+    background: #196aff;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25px;
+    transition: 0.4s;
+
+}
+.single-service-box p{
+    margin-top: 20px;
+}
+    
+
+.single-service-box {
+    min-height: 315px;
+    transition: 0.4s;
+    padding: 0 35px;
+    border-radius: 5px;
+}
+
+.service-icon-table {
+    padding-top: 50px;
+}
+
+.single-service-box:hover {
+    background: #1769ff;
+    color: #fff;
+}
+
+.single-service-box:hover .service-icon-table span {
+    color: #fff;
+}
+
+.single-service-box:hover h3 {
+    color: #fff;
+}
+
+.single-service-box:hover h3:before {
+    background: #fff;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 50px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25px;}
+}
+
+/* ==========Service AREA========= */
+
+/* ==========Portfolio AREA========= */
+.single-portfolio-item {
+    max-height: 430px;
+    max-width: 415px;
+    position: relative;
+    z-index: 1;
+    transition: 0.4s;}
+
+.single-portfolio-item img {
+    width: 100%;
+    transition: 0.4s;
+    
+}
+
+.hover-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    z-index: 999;
+    opacity: 0;
+    transition: 0.4s;
+    text-transform: capitalize;
+}
+.hover-item h5{
+    color: #fff;
+}
+
+
+
+.overlay {
+    background: #1769ff;
+    content: "";
+    height: 100%;
+    width: 92%;
+    top: 0;
+    left: 15px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.4s;
+    clip-path: polygon(100% 0, 100% 83%, 85% 100%, 0 100%, 0 0);
+}
+
+.single-portfolio-item:hover .overlay, .single-portfolio-item:hover .hover-item{
+    opacity: 1;
+}
+.single-portfolio-item:hover .hover-item, .single-portfolio-item:hover .hover-item h5{
+    color: #fff;
+}
+.single-portfolio-item:hover img{
+    clip-path: polygon(100% 0, 100% 83%, 85% 100%, 0 100%, 0 0);
+}
+/* ==========Portfolio AREA========= */
